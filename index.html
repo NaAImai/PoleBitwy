@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Pole bitwy</title>
+</head>
+<body style="font-size: xx-large;">
+    <p>Pole Bitwy, to turowa gra strategiczna. Na początek każdy z graczy rozstawia swe jednostki podając numer pola na którym mają się znajdywać.</p>
+    <p>Zadaniem każdego z graczy będzie wyeliminowanie armii przeciwnika.</p>
+    <p>Każdy z graczy może wykonać jeden ruch i jeden atak na turę.</p>
+    <p>By wkonać ruch, należy wpisać 'r' i zaraz po (bez spacji) dać literkę jednostki. (Np. rcz)</p>
+    <p>Podobnie atakujemy, podając literkę 'a', po niej literę naszej jednostki, a po niej cel. (Np. aso - atak snajperem, obserwatora)</p>
+    <p>Turę możemy pominąć pisząc literę 's'.</p>
+    <p>Zasięg ataku jednostek, to zasięg ich widzenia (nielicząc wysadzacza, który nie atakuje) - dla wszystkich są to 3 pola, poza snajperem który ma 4 pola.</p>
+    <p>Wszystkie jednostki mają różne statystyki, które definiują ich przydatność:</p>
+    <ul>
+        <li>CZ - czołg, duży pancerz, 100% przebicie. (Ma 3 stopnie zniszczenia. Po utracie dwóch nie może się ruszać; sam zadaje dwa stopnie zniszczenia)</li>
+        <li>S - saper, daleki zasięg, duże przebicie.</li>
+        <li>O - obserwator, jego główny cel, to infiltracja - gdy znajdzie się za linią frontu, daje 100% widoczności.</li>
+        <li>B - bazookarz, duże szanse na trafienie, 100% przebicie; przy bliskim kontakcie szansa na wysadzenie się.</li>
+        <li>W - wysadzacz, nie może atakować, ale jeżeli dotrze na drugi koniec pola, wygrywa grę.</li>
+        <li>Ż - żołnierz, co tu dużo mówić, zrobi swoją robotę, będzie walczył do końca.</li>
+        <li>P - pancerny, charakteryzuje się dużą odpornością na pociski.</li>
+    </ul>
+    
+    <input type="button" value="Zacznij grę!" onclick="gra()">
+
+    <script src="p.js"></script>
+</body>
+</html>
